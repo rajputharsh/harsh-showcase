@@ -115,7 +115,7 @@ const Experience = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="heading-lg gradient-text mb-4">Professional Experience</h2>
           <p className="body-lg text-foreground-muted max-w-2xl mx-auto">
-            3+ years of driving product innovation, platform enablement, and data-driven solutions 
+            4+ years of driving product innovation, platform enablement, and data-driven solutions 
             at scale across fintech and consulting domains.
           </p>
         </div>
