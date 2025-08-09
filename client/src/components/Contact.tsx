@@ -88,7 +88,7 @@ const Contact = () => {
                   <h4 className="heading-sm text-foreground">Currently Based</h4>
                 </div>
                 <p className="body-md text-foreground-muted">
-                  Delhi, India
+                  Gurugram, India
                 </p>
                 <p className="body-sm text-foreground-muted">
                   Open to remote opportunities and travel
