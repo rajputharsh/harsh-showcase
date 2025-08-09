@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative bg-gradient-hero">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative bg-gradient-hero pt-16">
       <div className="container mx-auto container-padding text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
