@@ -1,13 +1,19 @@
 import { Palette, MapPin, Music, Mic, BookOpen, Play } from "lucide-react";
-import sketchingImage from "@/assets/sketching-placeholder.jpg";
+import sketch1 from "@/assets/sketch-1.jpg";
+import sketch2 from "@/assets/sketch-2.jpg";
+import sketch3 from "@/assets/sketch-3.jpg";
 import travel1 from "@/assets/travel-1.jpg";
 import travel2 from "@/assets/travel-2.jpg";
 import travel3 from "@/assets/travel-3.jpg";
 import travel4 from "@/assets/travel-4.jpg";
 import travel5 from "@/assets/travel-5.jpg";
+import travel6 from "@/assets/travel-6.jpg";
+import travel7 from "@/assets/travel-7.jpg";
+import travel8 from "@/assets/travel-8.jpg";
 
 const Life = () => {
-  const travelImages = [travel1, travel2, travel3, travel4, travel5];
+  const sketchImages = [sketch1, sketch2, sketch3];
+  const travelImages = [travel1, travel2, travel3, travel4, travel5, travel6, travel7, travel8];
 
   const bookRecommendations = [
     "Hooked", "The God Delusion", "The case that shook India",
@@ -38,24 +44,28 @@ const Life = () => {
                 <Palette className="w-6 h-6 text-primary mr-3" />
                 <h3 className="heading-sm text-foreground">Sketching</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
+              <div className="space-y-6">
+                <div className="text-center">
                   <p className="body-md text-foreground-muted leading-relaxed mb-6">
                     Art has always been my way of capturing moments and expressing creativity. 
                     Through sketching, I explore different perspectives and find inspiration 
                     that often translates into innovative problem-solving in my professional work.
                   </p>
-                  <p className="body-sm text-foreground-muted">
+                  <p className="body-sm text-foreground-muted mb-6">
                     From architectural studies to portrait work, each sketch tells a story 
                     and represents a moment of mindful observation.
                   </p>
                 </div>
-                <div className="rounded-lg overflow-hidden interactive-hover">
-                  <img 
-                    src={sketchingImage} 
-                    alt="Sketching artwork and tools"
-                    className="w-full h-64 object-cover"
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {sketchImages.map((image, index) => (
+                    <div key={index} className="rounded-lg overflow-hidden interactive-hover">
+                      <img 
+                        src={image} 
+                        alt={`Sketch artwork ${index + 1}`}
+                        className="w-full h-64 object-cover"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -73,7 +83,7 @@ const Life = () => {
                 something new about culture, innovation, and human behavior - insights that enrich 
                 my approach to product strategy and user understanding.
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {travelImages.map((image, index) => (
                   <div key={index} className="rounded-lg overflow-hidden interactive-hover">
                     <img 

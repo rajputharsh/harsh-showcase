@@ -112,7 +112,7 @@ const Projects = () => {
               </div>
 
               {/* Technologies */}
-              <div className="mb-6">
+              <div className="mb-4">
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
@@ -124,33 +124,11 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Project Actions */}
-              <div className="flex gap-2">
-                <Button variant="minimal" size="sm" className="flex-1">
-                  <ExternalLink size={16} className="mr-2" />
-                  View Details
-                </Button>
-              </div>
             </div>
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16 animate-fade-in">
-          <div className="glass rounded-xl p-8 max-w-4xl mx-auto">
-            <h3 className="heading-sm mb-4 gradient-text-accent">Want to See More?</h3>
-            <p className="body-md text-foreground-muted mb-6 leading-relaxed">
-              These projects represent just a glimpse of my work in product innovation, 
-              automation, and strategic thinking. I'm always working on new solutions 
-              that bridge technology and business impact.
-            </p>
-            <Button variant="cta" size="lg">
-              <Github size={20} className="mr-2" />
-              View All Projects
-            </Button>
-          </div>
-        </div>
+
       </div>
     </section>
   );
