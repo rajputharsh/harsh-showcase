@@ -96,23 +96,18 @@ const Skills = () => {
                 <h3 className="heading-sm text-foreground">{category.title}</h3>
               </div>
 
-              {/* Skills List */}
-              <div className="space-y-4">
+              {/* Skills List - Improved UX with pills/tags layout */}
+              <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name} className="group">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="body-sm font-medium text-foreground">{skill.name}</span>
-                      <span className="mono-md text-foreground-muted">{skill.level}/10</span>
-                    </div>
-                    <div className="w-full bg-background-tertiary rounded-full h-2 overflow-hidden">
-                      <div 
-                        className={`h-full rounded-full transition-all duration-700 ease-out ${getSkillColor(skill.level)}`}
-                        style={{ 
-                          width: getSkillWidth(skill.level),
-                          animationDelay: `${skillIndex * 100}ms`
-                        }}
-                      ></div>
-                    </div>
+                  <div 
+                    key={skill.name} 
+                    className={`skill-pill ${getSkillColor(skill.level) === 'bg-accent' ? 'text-accent border-accent/20 bg-accent/10' : 
+                      getSkillColor(skill.level) === 'bg-primary' ? 'text-primary border-primary/20 bg-primary/10' : 
+                      'text-foreground-muted border-border bg-background-secondary'} animate-fade-in`}
+                    style={{ animationDelay: `${skillIndex * 50}ms` }}
+                  >
+                    <span className="font-medium">{skill.name}</span>
+                    <span className="ml-2 text-xs opacity-70">{skill.level}/10</span>
                   </div>
                 ))}
               </div>

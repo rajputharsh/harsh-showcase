@@ -70,7 +70,7 @@ const Experience = () => {
       title: "Data Science & Analytics Intern",
       company: "HDFC Ergo General Insurance",
       period: "March 2021 - June 2021",
-      logo: "/placeholder.svg",
+      logo: "/lovable-uploads/hdfc-ergo-logo.png",
       achievements: [
         {
           title: "Health Insurance Portfolio Analytics",
@@ -85,7 +85,7 @@ const Experience = () => {
       title: "Pro Bono Product Analytics",
       company: "12+ Startups",
       period: "Ongoing",
-      logo: "/placeholder.svg",
+      logo: "/lovable-uploads/pro-bono-logo.svg",
       achievements: [
         {
           title: "Growth Optimization",

@@ -36,7 +36,7 @@ const Education = () => {
       institution: "St. Marys School",
       period: "Aug 2014 - May 2015",
       location: "Dhampur, India",
-      grade: "93.8%",
+      grade: "10 CGPA",
       logo: null,
       achievements: []
     }

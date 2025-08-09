@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
             <div className="flex items-center justify-center text-foreground-muted animate-fade-in stagger-3">
               <MapPin size={16} className="mr-2" />
-              <span className="body-md">Delhi, India</span>
+              <span className="body-md">Gurugram, India</span>
             </div>
           </div>
 
