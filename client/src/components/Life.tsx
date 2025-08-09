@@ -89,7 +89,7 @@ const Life = () => {
                     <img 
                       src={image} 
                       alt={`Travel photography ${index + 1}`}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-64 object-cover"
                     />
                   </div>
                 ))}
