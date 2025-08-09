@@ -41,7 +41,7 @@ const Hero = () => {
           {/* Introduction */}
           <div className="mb-12 animate-fade-in stagger-4">
             <p className="body-lg text-foreground-muted max-w-3xl mx-auto leading-relaxed">
-              Passionate Product Manager with 3+ years of experience driving AI/ML platform enablement, 
+              Passionate Product Manager with 4+ years of experience driving AI/ML platform enablement, 
               data analytics, and product strategy at American Express. I transform complex technical 
               challenges into scalable solutions that impact millions of users and generate significant revenue.
             </p>

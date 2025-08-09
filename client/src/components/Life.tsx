@@ -62,7 +62,7 @@ const Life = () => {
                       <img 
                         src={image} 
                         alt={`Sketch artwork ${index + 1}`}
-                        className="w-full h-64 object-cover"
+                        className={`w-full h-64 object-cover ${index === 0 ? 'rotate-90-clockwise' : ''}`}
                       />
                     </div>
                   ))}
