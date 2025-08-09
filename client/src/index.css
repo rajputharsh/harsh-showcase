@@ -179,6 +179,10 @@
     @apply glass px-3 py-1.5 rounded-full text-sm font-medium text-foreground-muted hover:text-foreground hover:bg-primary/10 hover:border-primary/30 transition-all duration-300;
   }
 
+  .rotate-90-clockwise {
+    transform: rotate(90deg);
+  }
+
   /* Section styling */
   .section-padding {
     @apply py-16 md:py-24 lg:py-32;
